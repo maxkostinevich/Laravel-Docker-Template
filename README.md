@@ -1,9 +1,5 @@
-<p align="center"><a href="https://laravel101.com" target="_blank"><img src="https://user-images.githubusercontent.com/10295466/56030519-b302f780-5d25-11e9-8344-a9690cf54d63.png"></a></p>
-
----
-
 # Laravel Docker Template
-Docker Compose template for Laravel application.
+Docker Compose template for rapid Laravel/PHP development.
 
 ![bash](https://user-images.githubusercontent.com/10295466/56030094-b0ec6900-5d24-11e9-967f-259a9579dd70.png)
 
@@ -13,7 +9,7 @@ This Docker template is also suitable for any other PHP projects, feel free to m
 
 ## Included services
 - Nginx
-- PHP
+- PHP 7.4
 - MySQL
 - Redis
 - Adminer
@@ -173,6 +169,22 @@ QUEUE_DRIVER=redis
 For your convenience, Redis Commander is installed and available at ```http://localhost:6081```
 
 
+### Windows-only 
+
+** Phantom containers **
+
+In order to force stop all running containers you may need to run the following script: 
+```
+docker-stop.bat
+```
+
+** Make shorthand command **
+
+```
+make.bat appname
+```
+
+
 ### Main Endpoints
 
 - App URL: ```http://localhost:8080```
@@ -183,4 +195,4 @@ For your convenience, Redis Commander is installed and available at ```http://lo
 
 ---
 ### [MIT License](https://opensource.org/licenses/MIT)
-(c) 2019 [Laravel 101](https://laravel101.com) - All rights reserved.
+(c) 2020 [Max Kostinevich](https://maxkostinevich.com) - All rights reserved.
