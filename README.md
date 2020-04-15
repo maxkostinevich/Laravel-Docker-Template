@@ -171,14 +171,14 @@ For your convenience, Redis Commander is installed and available at ```http://lo
 
 ### Windows-only 
 
-** Phantom containers **
+**Phantom containers**
 
 In order to force stop all running containers you may need to run the following script: 
 ```
 docker-stop.bat
 ```
 
-** Make shorthand command **
+**Make shorthand command**
 
 ```
 make.bat appname
