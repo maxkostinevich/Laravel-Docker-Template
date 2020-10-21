@@ -24,7 +24,7 @@ This Docker template is also suitable for any other PHP projects, feel free to m
 1. Clone this repo:
 
 ```
-git clone git@github.com:laravel-101/Laravel-Docker-Template.git yourproject
+git clone git@github.com:maxkostinevich/Laravel-Docker-Template.git yourproject
 cd yourproject
 rm -rf .git
 ```
