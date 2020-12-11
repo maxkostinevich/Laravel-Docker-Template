@@ -9,7 +9,7 @@ This Docker template is also suitable for any other PHP projects, feel free to m
 
 ## Included services
 - Nginx
-- PHP 7.4
+- PHP 8.0.0
 - MySQL
 - Redis
 - Adminer
