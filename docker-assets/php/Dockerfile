@@ -1,4 +1,4 @@
-FROM php:7.4-fpm-alpine
+FROM php:8.0.0-fpm-alpine
 RUN apk add --no-cache \
         zip \
         libzip-dev \
@@ -23,7 +23,7 @@ RUN docker-php-ext-install \
 	bcmath \
         zip 
 	
-ENV PHPREDIS_VERSION 3.0.0
+ENV PHPREDIS_VERSION 5.3.2
 
 RUN mkdir -p /usr/src/php/ext/redis \
     && curl -L https://github.com/phpredis/phpredis/archive/$PHPREDIS_VERSION.tar.gz | tar xvz -C /usr/src/php/ext/redis --strip 1 \
@@ -35,7 +35,6 @@ RUN composer global require laravel/installer
 
 ENV PATH="/root/.composer/vendor/bin:${PATH}"
 
-RUN composer global require hirak/prestissimo
 RUN composer global require phpunit/phpunit
 
 RUN apk add --update nodejs 
