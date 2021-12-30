@@ -1,4 +1,4 @@
-FROM php:8.0.0-fpm-alpine
+FROM php:8.1.0-fpm-alpine
 RUN apk add --no-cache \
         zip \
         libzip-dev \
@@ -23,7 +23,7 @@ RUN docker-php-ext-install \
 	bcmath \
         zip 
 	
-ENV PHPREDIS_VERSION 5.3.2
+ENV PHPREDIS_VERSION 5.3.5
 
 RUN mkdir -p /usr/src/php/ext/redis \
     && curl -L https://github.com/phpredis/phpredis/archive/$PHPREDIS_VERSION.tar.gz | tar xvz -C /usr/src/php/ext/redis --strip 1 \
