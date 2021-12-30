@@ -9,7 +9,7 @@ This Docker template is also suitable for any other PHP projects, feel free to m
 
 ## Included services
 - Nginx
-- PHP 8.0.0
+- PHP 8.1.0
 - MySQL
 - Redis
 - Adminer
@@ -195,4 +195,4 @@ make.bat appname
 
 ---
 ### [MIT License](https://opensource.org/licenses/MIT)
-(c) 2020 [Max Kostinevich](https://maxkostinevich.com) - All rights reserved.
+(c) 2022 [Max Kostinevich](https://maxkostinevich.com) - All rights reserved.
