@@ -23,6 +23,9 @@ RUN docker-php-ext-install \
 	bcmath \
         zip 
 	
+	
+RUN apk add mysql-client
+	
 ENV PHPREDIS_VERSION 5.3.5
 
 RUN mkdir -p /usr/src/php/ext/redis \
